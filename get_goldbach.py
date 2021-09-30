@@ -3,13 +3,13 @@ from get_largest_prime_below import get_largest_prime_below
 
 
 def get_goldbach(n: int) -> (int, int):
-    """[Returneaza o pereche cu cel mai mic, respectiv cel mai mare numar prim care insumate dau numarul oferit ca parametru]
+    """Returneaza o pereche cu cel mai mic, respectiv cel mai mare numar prim care insumate dau numarul oferit ca parametru
 
     Args:
-        n (int): [Intregul care va forma suma numerelor prime]
+        n (int): Intregul care va forma suma numerelor prime
 
     Returns:
-        (int,int): [Perechea de prime returnata]
+        (int,int): Perechea de prime returnata
     """
     if n % 2 == 1:
         return None
@@ -42,7 +42,7 @@ def test_get_goldbach():
     assert get_goldbach(234) == (5, 229)
 
 
-
+test_get_goldbach()
 
 
 
