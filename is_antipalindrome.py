@@ -46,3 +46,10 @@ def test_is_antipalindrome():
     assert is_antipalindrome(1) == True
 
 test_is_antipalindrome()
+
+def input_is_antipalindrome():
+    x = int(input("Verifica daca un numar este antipalindrom. Un numar este antipalindrom daca oricare dooua cifre egal departate de extremitati sunt diferite. Ce numar vrei sa verifici? "))
+    if is_antipalindrome(x):
+        print(x, "este antipalindrom.")
+    else:
+        print(x, "nu este antipalindrom.")

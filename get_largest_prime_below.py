@@ -23,3 +23,7 @@ def test_get_largest_prime_below():
     assert get_largest_prime_below(50) == 47
 
 test_get_largest_prime_below()
+
+def input_get_largest_prime_below():
+    x = int(input("Functia va gasi cel mai mare numar prim mai mic decat o limita superioara. Care este limita superioara? "))
+    print(f"Cel mai mare numar prim mai mic decat {x} este {get_largest_prime_below(x)}.")

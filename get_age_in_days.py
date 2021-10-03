@@ -19,3 +19,7 @@ def test_get_age_in_days():
     """n-am ce test sa fac, rezultatele se schimba zilnic
     """
     pass
+
+def input_get_age_in_days():
+    x = input("Functia va calcula varsta unei persoane exprimata in zile. Care este data nasterii? (format DD/MM/YYYY)")
+    print(f"Varsta persoanei in este de {get_age_in_days(x)} zile.")

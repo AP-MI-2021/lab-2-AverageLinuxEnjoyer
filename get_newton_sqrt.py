@@ -28,3 +28,10 @@ def test_get_newton_sqrt():
     assert get_newton_sqrt(1,3) == 1.0003048780487804 
 
 test_get_newton_sqrt()
+
+def input_get_newton_sqrt():
+    print("Functia calculeaza o aproximare a radacinii patrate a unui numar dat, repetand de un numar de ori metoda lui Newton.")
+    x = int(input("La ce numar vrei sa-i gasesti radacina?"))
+    y = int(input("De cate ori sa se repete metoda lui newton?"))
+
+    print(f"Radacina patrata a lui {x} este {get_newton_sqrt(x,y)}")

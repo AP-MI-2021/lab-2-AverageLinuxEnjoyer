@@ -28,10 +28,17 @@ def test_get_temp():
     """Testeaza functia get_temp
     """
     assert get_temp(140, 'F', 'C') == 60.0
-    assert round(get_temp(-18, 'C', 'F')) == -0.3999999999999986
+    assert get_temp(-18, 'C', 'F') == -0.3999999999999986
     assert get_temp(273, 'K', 'C') == 0
     assert get_temp(4, 'K', 'F') == -452.2
     assert get_temp(5503, 'C', 'K') == 5776
     assert get_temp(49,'C','F') == 120.2
 
 test_get_temp()
+
+def input_get_temp():
+    print("Functia converteste o temperatura dintr-o scara data intr-o alta scara data.")
+    temp = float(input("Temperatura = "))
+    fromm = input("Scara temperaturii = ")
+    to = input("Scara dorita = ")
+    print(f"{temp} {fromm} = {get_temp(temp,fromm,to)} {to}")

@@ -34,3 +34,9 @@ def test_get_n_choose_k():
     assert get_n_choose_k(5,4) == 5.0
     assert get_n_choose_k(52,5) == 2598960.0
     assert get_n_choose_k(12,5) == get_n_choose_k(12,7) == 792
+
+def input_get_n_choose_k():
+    print("Functia calculeaza combinari de n luate cate k.")
+    n = int(input("n="))
+    k = int(input("k="))
+    print(f"Exista {get_n_choose_k(n,k)} combinari de {n} luate cate {k}.")

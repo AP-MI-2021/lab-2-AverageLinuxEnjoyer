@@ -31,3 +31,10 @@ def test_is_palidnrome():
     assert is_palindrome(101) == True
 
 test_is_palidnrome()
+
+def input_is_palindrome():
+    x = int(input("Functia verifica daca un numar este palindrom. Ce numar doresti sa verifici? "))
+    if is_palindrome(x):
+        print(x, "este palindrom.")
+    else:
+        print(x, "nu este palindrom.")

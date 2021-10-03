@@ -44,8 +44,7 @@ def test_get_goldbach():
 
 test_get_goldbach()
 
-
-
-
-
-
+def input_get_goldbach():
+    x = int(input("Functia gaseste o pereche cu cel mai mic, respectiv cel mai mare numar prim care insumate dau un numar ales. Cat sa fie suma?"))
+    result = get_goldbach(x)
+    print(f"Cele doua numere prime care insumate dau {x} sunt {result[0]} si {result[1]}.")

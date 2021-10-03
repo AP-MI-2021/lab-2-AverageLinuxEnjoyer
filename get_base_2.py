@@ -33,3 +33,7 @@ def test_get_base_2():
     assert get_base_2(237) == "11101101"
 
 test_get_base_2()
+
+def input_get_base_2():
+    x = int(input("Functia converteste un numar din baza 10 in baza 2. Ce numar sa fie convertit?"))
+    print(f"{x} in baza 2 are valorea de: {get_base_2(x)}.") 

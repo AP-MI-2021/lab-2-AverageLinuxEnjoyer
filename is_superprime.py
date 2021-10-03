@@ -27,3 +27,10 @@ def test_is_superprime():
     assert is_superprime(1) == False
 
 test_is_superprime()
+
+def input_is_superprime():
+    x = int(input("Functia verifica daca un numar si toate prefixele sale sunt prime. Ce numar sa fie verificat? "))
+    if is_superprime(x):
+        print(x, "este superprim.")
+    else:
+        print(x, "nu este superprim.")

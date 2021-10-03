@@ -36,3 +36,9 @@ def test_get_perfect_squares():
     assert get_perfect_squares(300, 400) == [324, 361, 400]
 
 test_get_perfect_squares()
+
+def input_get_perfect_squares():
+    print("Functia returneaza o lista cu patratele perfecte cuprinse intre o limita inferioara si o limita superioara date.")
+    x = int(input("Limita inferioara = "))
+    y = int(input("Limita superioara = "))
+    print(f"Intre {x} si {y} exista urmatoarele patrate perfecte: {get_perfect_squares(x,y)}.")

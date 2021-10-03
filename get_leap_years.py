@@ -31,3 +31,9 @@ def test_get_leap_years():
     assert get_leap_years(1,10) == [4, 8]
 
 test_get_leap_years()
+
+def input_get_leap_years():
+    print("Functia va gasi anii bisecti intre doi ani dati.")
+    x = int(input("Primul an = "))
+    y = int(input("Al doilea an = "))
+    print(f"Intre {x} si {y} exista urmatorii ani bisecti: {get_leap_years(x,y)}.")

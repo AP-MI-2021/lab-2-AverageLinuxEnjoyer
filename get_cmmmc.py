@@ -58,3 +58,12 @@ def test_get_cmmmc():
 
 test_get_cmmmc()
 
+def input_get_cmmmc():
+    print("Functia va calcula CMMMC a unui numar ales de numere.")
+    n = int(input("Nr de numere: "))
+    nr = []
+    for i in range(n):
+        x = int(input("Adauga un numar in lista: "))
+        nr.append(x)
+
+    print(f"CMMMC al numerelor din lista adaugata e {get_cmmmc(nr)}")
