@@ -40,5 +40,3 @@ def test_get_base_16_from_2():
 def input_get_base_16_from_2():
     x = input("Functia converteste un numar din baza 2 in baza 16. Ce numar sa fie convertit? ")
     print(f"Numarul in baza 2: {x}, convertit in baza 16, este: {get_base_16_from_2(x)}.")
-
-input_get_base_16_from_2()
