@@ -1,12 +1,12 @@
 
 def get_base_16_from_2(n: str) -> str:
-    """Convertesete un numar din baza 16 in baza 2
+    """Convertesete un numar din baza 2 in baza 16
 
     Args:
-        n (str): [Numarul in baza 16 care va fi convertit]
+        n (str): [Numarul in baza 2 care va fi convertit]
 
     Returns:
-        str: [Numarul in baza 2 dupa conversie]
+        str: [Numarul in baza 16 dupa conversie]
     """
 
     if n == '0':
